@@ -29,8 +29,8 @@ def parse_cinema_asiakino():
             'title': title,
             'tags': tags,
             'showtimes': showtimes,
-            'hall': None,  # На сайте Азия нет зала
-            'price': None  # Цены на сайте Азия нет
+            'hall': None,
+            'price': None
         })
     return 'Кинотеатр "Азия"', films
 
@@ -174,6 +174,7 @@ def job():
 schedule.every().day.at("08:00").do(job)
 
 # Запуск цикла выполнения задач
-while True:
-    schedule.run_pending()
-    time.sleep(60)
+if _name_ == "_main_":
+    while True:
+        schedule.run_pending()
+        time.sleep(60)
