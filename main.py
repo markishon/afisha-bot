@@ -7,7 +7,7 @@ import time
 from telegram import Bot
 
 # Настройки для Telegram
-TELEGRAM_TOKEN = 'you7713528429:AAFOHgwcRkHoihZRLl_a7FLknA7ifjYXLqA'  # Ваш токен Telegram-бота
+TELEGRAM_TOKEN = '7713528429:AAFOHgwcRkHoihZRLl_a7FLknA7ifjYXLqA'  # Ваш токен Telegram-бота
 CHAT_ID = '@smolotka14'  # ID вашего канала
 
 # Часовой пояс Якутска
