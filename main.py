@@ -174,7 +174,7 @@ def job():
 schedule.every().day.at("08:00").do(job)
 
 # Запуск цикла выполнения задач
-if _name_ == "_main_":
+if __name__ == "__main__":
     while True:
         schedule.run_pending()
         time.sleep(60)
